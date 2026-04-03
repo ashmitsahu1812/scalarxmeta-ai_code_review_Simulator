@@ -151,7 +151,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="OpenEnv Code Review Dashboard") as
                         cust_title = gr.Textbox(label="PR Title", placeholder="e.g., Fix security vulnerability")
                         cust_filename = gr.Textbox(label="File Name", placeholder="auth.py")
                     cust_desc = gr.Textbox(label="PR Description", lines=2)
-                    cust_diff = gr.Code(label="Unified Diff (.patch style)", language="diff", lines=10)
+                    cust_diff = gr.Code(label="Unified Diff (.patch style)", language="markdown", lines=10)
                     
                     gr.Markdown("---")
                     gr.Markdown("### 🎯 Grader Metadata (How to score)")
