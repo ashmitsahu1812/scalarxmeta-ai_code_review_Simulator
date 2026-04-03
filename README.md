@@ -1,3 +1,12 @@
+---
+title: Scalarxmeta
+emoji: 🚀
+colorFrom: green
+colorTo: blue
+sdk: docker
+pinned: false
+---
+
 # 🚀 ScalarX Meta: AI Code Review Simulator
 
 ![OpenEnv Compliant](https://img.shields.io/badge/OpenEnv-Compliant-green?style=for-the-badge)
