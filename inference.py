@@ -9,7 +9,7 @@ from openai import OpenAI
 API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
 MODEL_NAME = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-Coder-32B-Instruct")
 # Prioritize OPENAI_API_KEY if HF_TOKEN is not set
-HF_TOKEN = os.getenv("HF_TOKEN", os.getenv("OPENAI_API_KEY", "your_token_here"))
+HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("OPENAI_API_KEY")
 
 # Environment Endpoint
 API_URL = os.getenv("API_URL", "http://localhost:7860")
